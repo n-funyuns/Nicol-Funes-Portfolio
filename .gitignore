@@ -1,0 +1,19 @@
+# Exclude large original screenshot
+Screenshot 2026-03-03 at 7.52.57 PM.png
+
+# System files
+.DS_Store
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+node_modules/
+dist/
+build/
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

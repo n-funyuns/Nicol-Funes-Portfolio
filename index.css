@@ -543,6 +543,55 @@ footer p {
   letter-spacing: 1px;
 }
 
+/* Mobile Resume Card - Hidden by default */
+.mobile-resume-card {
+  display: none;
+  background: var(--dark-2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 40px 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: var(--shadow-dark);
+}
+
+.resume-icon-box {
+  width: 80px;
+  height: 80px;
+  background: rgba(244, 184, 200, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--pink);
+}
+
+.mobile-resume-card h3 {
+  color: var(--text-cream);
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.mobile-resume-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: rgba(244, 184, 200, 0.05);
+  transform: translateY(-2px);
+}
+
 /* ===================== */
 /* RESPONSIVE            */
 /* ===================== */
@@ -567,7 +616,7 @@ footer p {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .hero-title {
     font-size: 3.2rem;
   }
@@ -600,12 +649,13 @@ footer p {
     justify-content: center;
   }
 
-  /* Native fit for tablet */
+  /* Show Mobile Card, Hide Iframe on tablet/phone */
+  .mobile-resume-card {
+    display: block;
+  }
+
   .resume-viewer {
-    height: 520px;
-    width: 100%;
-    margin-bottom: 30px;
-    transform: none;
+    display: none;
   }
 }
 
@@ -647,17 +697,10 @@ footer p {
     margin-bottom: 30px;
   }
 
-  /* Native fit for mobile */
-  .resume-viewer {
-    height: 420px;
-    width: 100%;
-    border-radius: 12px;
-    transform: none;
-    margin-bottom: 30px;
-  }
-
   .btn {
     width: 100%;
+    display: flex;
+    /* Force full width flex */
     justify-content: center;
     padding: 14px 24px;
     font-size: 0.85rem;

@@ -546,15 +546,42 @@ footer p {
 /* ===================== */
 /* RESPONSIVE            */
 /* ===================== */
+
+/* Table viewports (iPad/Tablet) */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .exp-title {
+    font-size: 2.8rem;
+  }
+
+  .exp-panel {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .exp-number {
+    font-size: 10rem;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-title {
     font-size: 3.2rem;
+  }
+
+  .profile-container {
+    width: 140px;
+    height: 140px;
   }
 
   .exp-panel {
     padding: 24px;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
   }
 
   .exp-number {
@@ -568,15 +595,38 @@ footer p {
   .exp-header {
     padding: 14px 24px;
   }
+
+  .exp-skills {
+    justify-content: center;
+  }
+
+  /* Native fit for tablet */
+  .resume-viewer {
+    height: 520px;
+    width: 100%;
+    margin-bottom: 30px;
+    transform: none;
+  }
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    letter-spacing: -1.5px;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .profile-container {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
   }
 
   .exp-title {
@@ -584,10 +634,57 @@ footer p {
   }
 
   .exp-body {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
   }
 
   .section-title {
     font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+  }
+
+  /* Native fit for mobile */
+  .resume-viewer {
+    height: 420px;
+    width: 100%;
+    border-radius: 12px;
+    transform: none;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 0.85rem;
+  }
+
+  .exp-header {
+    padding: 12px 18px;
+    gap: 12px;
+  }
+
+  .exp-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+
+  .exp-title {
+    font-size: 1.6rem;
   }
 }

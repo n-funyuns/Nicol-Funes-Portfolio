@@ -453,7 +453,7 @@ h3 {
 /* ===================== */
 .resume-section {
   background: var(--dark-1);
-  padding: 120px 32px;
+  padding: 80px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -483,7 +483,7 @@ h3 {
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   color: var(--text-cream);
   letter-spacing: -1px;
 }
@@ -498,10 +498,10 @@ h3 {
 .resume-viewer {
   width: 100%;
   max-width: 1200px;
-  height: 680px;
+  height: 520px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   box-shadow: var(--shadow-dark);
   display: block;
 }
